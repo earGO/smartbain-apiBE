@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff092985-ade3-4b88-a018-b9dee435acef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/signin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,27 +32,27 @@
         <counts>
           <entry key="Local" value="3" />
           <entry key="Local (1)" value="1" />
-          <entry key="js" value="1" />
+          <entry key="js" value="5" />
           <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="1" />
+          <entry key="JavaScript" value="5" />
           <entry key="Terminal Session" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1829" />
-          <entry key="txt" value="109" />
+          <entry key="js" value="2822" />
+          <entry key="txt" value="254" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1829" />
-          <entry key="PLAIN_TEXT" value="109" />
+          <entry key="JavaScript" value="2822" />
+          <entry key="PLAIN_TEXT" value="254" />
         </counts>
       </usages-collector>
     </session>
@@ -58,11 +64,44 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="87" column="66" selection-start-line="87" selection-start-column="66" selection-end-line="87" selection-end-column="66" />
-                  <folding>
-                    <element signature="e#195#755#0" />
-                  </folding>
+                <state relative-caret-position="162">
+                  <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/profile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/signin.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="90">
+                  <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/image.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/register.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret lean-forward="true" />
                 </state>
               </provider>
             </entry>
@@ -86,7 +125,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/register.js" />
+        <option value="$PROJECT_DIR$/controllers/register.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/controllers/profile.js" />
+        <option value="$PROJECT_DIR$/controllers/signin.js" />
+        <option value="$PROJECT_DIR$/controllers/image.js" />
       </list>
     </option>
   </component>
@@ -123,6 +167,11 @@
               <item name="smartbrain-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartbrain-api" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="smartbrain-api" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartbrain-api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -137,6 +186,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controllers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -160,7 +214,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539174060905</updated>
-      <workItem from="1539174062790" duration="8657000" />
+      <workItem from="1539174062790" duration="14301000" />
     </task>
     <task id="LOCAL-00001" summary="registration to users table added">
       <created>1539176527734</created>
@@ -183,11 +237,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539180316982</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="registration to users and login tables through the transaction added">
+      <created>1539183707081</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539183707081</updated>
+    </task>
+    <task id="LOCAL-00005" summary="server controllers added">
+      <created>1539187991619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1539187991619</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8657000" />
+    <option name="totallyTimeSpent" value="14301000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1000" extended-state="0" />
@@ -197,7 +265,8 @@
       <window_info id="npm" order="1" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18085669" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" side_tool="true" visible="true" weight="0.4155251" />
+      <window_info anchor="bottom" id="Messages" sideWeight="0.4997356" visible="true" weight="0.32990867" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.5002644" side_tool="true" visible="true" weight="0.32990867" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -225,7 +294,11 @@
     <MESSAGE value="registration to users table added" />
     <MESSAGE value="id's request and comments added" />
     <MESSAGE value="got image entries math working with database" />
-    <option name="LAST_COMMIT_MESSAGE" value="got image entries math working with database" />
+    <MESSAGE value="registration to users and login tables through the transaction added" />
+    <MESSAGE value="signin from database added" />
+    <MESSAGE value="server controllers added" />
+    <MESSAGE value="server controllers added 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="server controllers added 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -235,13 +308,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="87" column="66" selection-start-line="87" selection-start-column="66" selection-end-line="87" selection-end-column="66" />
-          <folding>
-            <element signature="e#195#755#0" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
         </state>
       </provider>
     </entry>
