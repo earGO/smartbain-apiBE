@@ -4,9 +4,10 @@ const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex= require ('knex')
 
+//create a const for a knex lib to use and configure
 const db = knex({
-        client: 'pg',
-        connection: {
+        client: 'pg', //postgres client
+        connection: { //connection params
             host : '127.0.0.1',
             user : 'eargo',
             password : '12345',
@@ -76,25 +77,36 @@ app.post('/signin',(req,res) => {
 
 app.post('/register', (req,res) => { 
     const { email, name, password } = req.body;
-    db('users').insert([{
+    //put a new entry in users table of a database
+    db('users')
+        .returning('*') //set a return value
+        .insert([{ //create an object to put into table
         email: email,
         name: name,
         joined: new Date()
-    }]).then(console.log)
-    res.json(database.users[database.users.length-1]);
+    }])//then get user value from a new entry for logging
+        .then(user => {
+            res.json(user[[0]]);
+        })//catch an error for a duplicate email
+        .catch(err => res.status(400).json('unable_to_register'))
 })
 app.get('/profile/:id',(req,res) => {
-    const { id } = req.params;
-    let found = false;
-    database.users.forEach(user => {
-        if (user.id === id) {
-           found = true;
-           return  res.json(user);
-        }
+/*get an id from query*/
+    const { id } = req.params
+    //select a user from database by id
+    db.select('*').from('users').where('id','=',id)
+        /*then check if user with this id exists*/
+        .then(user => {
+            /*if user-array have non zero length then it exists and returns an array*/
+            if (user.length) {
+                res.json(user[[0]])
+                /*else error 400 and message*/
+            } else {
+                res.status(400).json('not_found')
+            }
+
     })
-    if (!found) {
-        res.status(400).json('not found');
-    }
+        .catch(err => res.status(400).json('error_getting_user'))
 
 })
 
