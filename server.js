@@ -77,18 +77,35 @@ app.post('/signin',(req,res) => {
 
 app.post('/register', (req,res) => { 
     const { email, name, password } = req.body;
-    //put a new entry in users table of a database
-    db('users')
-        .returning('*') //set a return value
-        .insert([{ //create an object to put into table
-        email: email,
-        name: name,
-        joined: new Date()
-    }])//then get user value from a new entry for logging
-        .then(user => {
-            res.json(user[[0]]);
-        })//catch an error for a duplicate email
+    /*here we hasn password*/
+    const hash = bcrypt.hashSync(password);
+    db.transaction(trx => {
+        trx.insert({ /*inserting data to login table*/
+            hash: hash,
+            email: email
+        })
+            .into('login')
+            /*returning an email for furhter use in other table */
+            .returning('email')
+            .then(loginEmail => {
+                /*put a new entry in users table of a database*/
+                return trx('users')
+                    .returning('*') /*set a return value*/
+                    .insert([{ /*create an object to put into table*/
+                        email: loginEmail[[0]],
+                        name: name,
+                        joined: new Date()
+                    }])/*then get user value from a new entry for logging*/
+                    .then(user => {
+                        res.json(user[[0]]);
+                    })
+
+            })
+            .then(trx.commit)
+            .catch(trx.rollback)
+    }) /*catch an error for a duplicate email*/
         .catch(err => res.status(400).json('unable_to_register'))
+
 })
 app.get('/profile/:id',(req,res) => {
 /*get an id from query*/
@@ -114,10 +131,10 @@ app.put('/image', (req,res) => {
     const { id } = req.body;
     db('users')
         .where('id', '=', id)
-        .increment('entries',1)
-        .returning('entries')
+        .increment('entries',1) /*incremen entries for a signed in user when she pushes Detect button*/
+        .returning('entries') /*return new entries value*/
         .then(entries => {
-            res.json(entries[[0]]);
+            res.json(entries[[0]]); /*put a new entries value to query result to work with*/
         })
         .catch(err =>  res.status(400).json('error_getting_user_entries'))
 })

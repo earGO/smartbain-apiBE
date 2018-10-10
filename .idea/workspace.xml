@@ -39,14 +39,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1165" />
-          <entry key="txt" value="34" />
+          <entry key="js" value="1829" />
+          <entry key="txt" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1165" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="JavaScript" value="1829" />
+          <entry key="PLAIN_TEXT" value="109" />
         </counts>
       </usages-collector>
     </session>
@@ -58,8 +58,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+                <state relative-caret-position="165">
+                  <caret line="87" column="66" selection-start-line="87" selection-start-column="66" selection-end-line="87" selection-end-column="66" />
                   <folding>
                     <element signature="e#195#755#0" />
                   </folding>
@@ -160,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539174060905</updated>
-      <workItem from="1539174062790" duration="5177000" />
+      <workItem from="1539174062790" duration="8657000" />
     </task>
     <task id="LOCAL-00001" summary="registration to users table added">
       <created>1539176527734</created>
@@ -169,11 +169,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539176527734</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="id's request and comments added">
+      <created>1539179506234</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539179506234</updated>
+    </task>
+    <task id="LOCAL-00003" summary="got image entries math working with database">
+      <created>1539180316982</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1539180316982</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5177000" />
+    <option name="totallyTimeSpent" value="8657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1000" extended-state="0" />
@@ -209,7 +223,9 @@
     <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="registration to users table added" />
-    <option name="LAST_COMMIT_MESSAGE" value="registration to users table added" />
+    <MESSAGE value="id's request and comments added" />
+    <MESSAGE value="got image entries math working with database" />
+    <option name="LAST_COMMIT_MESSAGE" value="got image entries math working with database" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -221,8 +237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="93" column="24" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+        <state relative-caret-position="165">
+          <caret line="87" column="66" selection-start-line="87" selection-start-column="66" selection-end-line="87" selection-end-column="66" />
           <folding>
             <element signature="e#195#755#0" />
           </folding>
