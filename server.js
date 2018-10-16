@@ -15,9 +15,7 @@ const db = knex({
     client: 'pg', //postgres client
     connection: { //connection params
         host : process.env.DATABASE_URL,
-        user : 'eargo',
-        password : '12345',
-        database : 'smartbrain'
+        ssl: true,
     }
 });
 
